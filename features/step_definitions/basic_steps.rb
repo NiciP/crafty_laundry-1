@@ -7,7 +7,7 @@ Given("I visit the {string}") do |page|
     end
   end
   
-  Then("I should see {string}") do |string|
-    pending # Write code here that turns the phrase above into concrete actions
+  Then("I should see {string}") do |expected_content|
+    expect(page).to have_content expected_content
   end
   
