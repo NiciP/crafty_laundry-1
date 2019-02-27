@@ -1,0 +1,2 @@
+class LaundryRoomsController < ApplicationController
+end
