@@ -14,6 +14,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'webpacker', '~> 3.5'
 gem 'tailwindcss', '~> 0.2.0'
 gem 'haml-rails'
+gem 'devise'
 
 group :development, :test do
   gem 'cucumber-rails', require: false
