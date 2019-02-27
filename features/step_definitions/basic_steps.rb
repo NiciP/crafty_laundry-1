@@ -5,9 +5,6 @@ Given("I visit the {string}") do |page|
     else
         return false
     end
-  end
+end
   
-  Then("I should see {string}") do |expected_content|
-    expect(page).to have_content expected_content
-  end
   
