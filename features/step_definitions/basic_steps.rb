@@ -6,5 +6,3 @@ Given("I visit the {string}") do |page|
         return false
     end
 end
-  
-  
