@@ -10,9 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2019_02_27_085933) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "bookings", force: :cascade do |t|
+    t.datetime "start_time"
+    t.datetime "end_time"
+    t.integer "length"
+    t.bigint "resource_id"
+    t.index ["resource_id"], name: "index_bookings_on_resource_id"
+  end
+
+  create_table "resources", force: :cascade do |t|
+    t.string "name"
+  end
+
+  add_foreign_key "bookings", "resources"
 end
