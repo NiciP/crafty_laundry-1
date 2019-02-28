@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_27_214042) do
+ActiveRecord::Schema.define(version: 2019_02_28_091835) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -28,6 +28,17 @@ ActiveRecord::Schema.define(version: 2019_02_27_214042) do
     t.datetime "created_at"
     t.index ["bookable_type", "bookable_id"], name: "index_acts_as_bookable_bookings_bookable"
     t.index ["booker_type", "booker_id"], name: "index_acts_as_bookable_bookings_booker"
+  end
+
+  create_table "bookers", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "laundry_rooms", force: :cascade do |t|
+    t.string "timeslot"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
