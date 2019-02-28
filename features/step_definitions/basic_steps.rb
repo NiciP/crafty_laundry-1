@@ -7,30 +7,29 @@ Given("I visit the {string}") do |page|
     else
         return false
     end
- end
+end
 
 Given("I click on {string}") do |link|
     click_on link
 end
- 
+
 Given("the following Laundry room exists") do |table|
     table.hashes.each do |laundry_room|
         FactoryBot.create(:laundry_room, laundry_room)
     end
 end
-  
+
 When("I fill in {string} with {string}") do |element, value|
-  fill_in element, with: value 
+    fill_in element, with: value 
 end
 
 Given("the following user exists") do |table|
-  table.hashes.each do |user|
-    FactoryBot.create(:user, user)
-  end 
+    table.hashes.each do |user|
+        FactoryBot.create(:user, user)
+    end 
 end
 
 Given("I am logged in as {string}") do |email|
     user = User.find_by(email: email)
     login_as(user, scope: :user)
-end
-  
+end  
