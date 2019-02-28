@@ -11,4 +11,3 @@ Feature: Visitor can book an available timeslot
        And I click on "Yes"
        Then I should see "Successfully booked"
 
-
