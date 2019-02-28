@@ -11,6 +11,12 @@ When("I click on {string}") do |element_text|
    click_on element_text
 end
   
-When("I fill in {string} with {string}") do |string, string2|
+When("I fill in {string} with {string}") do |element, value|
+    fill_in element, with: value 
 end
-  
+
+Given("the following user exist") do |table|
+    table.hashes.each do |user|
+        FactoryBot.create(:user, user)
+    end
+end
