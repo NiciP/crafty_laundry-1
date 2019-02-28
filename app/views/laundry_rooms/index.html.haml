@@ -1,9 +1,6 @@
 %h1 LaundryRooms
 
-- if notice
-    %p.alert.alert-success= notice
-- if alert
-    %p.alert.alert-danger= alert
+
 
 =image_tag "craftylogo.png", :class => "logo"
 = link_to "Sign up", new_user_registration_path unless current_page? new_user_registration_path

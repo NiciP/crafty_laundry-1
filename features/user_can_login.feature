@@ -16,3 +16,9 @@ Scenario: User Can Login [Happy Path]
     And I click on "Log in"
     Then I should see "Signed in successfully."
 
+Scenario: User Can Login [Sad Path]
+    When I click on "Login"    
+    And I fill in "Email" with "gina@rita.com"
+    And I fill in "Password" with "123456789"
+    And I click on "Log in"
+    Then I should see "Invalid Email or password."
