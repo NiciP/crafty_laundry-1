@@ -7,8 +7,10 @@ Given("I visit the {string}") do |page|
     else
         return false
     end
-end
+ end
 
+ 
 Given("I click on {string}") do |link|
-    click_on "booking"     
+    click_on link
 end
+ 

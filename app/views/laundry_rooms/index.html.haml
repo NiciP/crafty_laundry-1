@@ -3,4 +3,9 @@
     Login
 %button 
     Sign up
-=image_tag "craftylogo.png", :class => "logo"
+=image_tag "craftylogo.png", class: "logo"
+
+- @laundry_rooms.each do |laundry_room|
+    %p=laundry_room.schedule.next_occurrences(30)
+        
+
