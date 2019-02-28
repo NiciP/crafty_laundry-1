@@ -1,5 +1,5 @@
 FactoryBot.define do
   factory :laundry_room do
-    timeslot { "MyString" }
+    schedule { "MyString" }
   end
 end

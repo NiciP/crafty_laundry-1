@@ -1,5 +1,5 @@
 class LaundryRoom < ApplicationRecord
-    acts_as_bookable    time_type: :fixed,
+    acts_as_bookable    time_type: :range,
                         capacity_type: :closed 
                         
 

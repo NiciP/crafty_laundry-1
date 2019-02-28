@@ -9,8 +9,13 @@ Given("I visit the {string}") do |page|
     end
  end
 
- 
 Given("I click on {string}") do |link|
     click_on link
 end
  
+Given("the following Laundry room exists") do |table|
+    table.hashes.each do |laundry_room|
+        FactoryBot.create(:laundry_room, laundry_room)
+  end
+end
+  
