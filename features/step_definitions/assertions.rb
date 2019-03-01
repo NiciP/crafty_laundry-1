@@ -5,3 +5,7 @@ end
 Then("I should see our logo") do 
     expect(page).to have_selector(".logo")
 end
+
+Then("I logout") do
+    logout 
+ end
