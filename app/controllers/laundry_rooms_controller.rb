@@ -3,5 +3,8 @@ class LaundryRoomsController < ApplicationController
       @laundry_rooms = LaundryRoom.all
     end 
 
-   
+    def create
+    binding.pry
+    end
+
 end
