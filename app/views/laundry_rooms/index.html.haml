@@ -1,6 +1,7 @@
 =image_tag "craftylogo.png", :class => "logo"
 = link_to "Sign up", new_user_registration_path unless current_page? new_user_registration_path
 = link_to "Login", new_user_session_path 
+= link_to "Calendar", laundry_room_path(1)
 
 - @laundry_rooms.each do |laundry_room|
     -laundry_room.schedule.next_occurrences(30).each do |slot|

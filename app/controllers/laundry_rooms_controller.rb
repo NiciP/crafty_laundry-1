@@ -4,7 +4,7 @@ class LaundryRoomsController < ApplicationController
   def index
     @laundry_rooms = LaundryRoom.all
   end 
-    
+
   def create_booking
     laundry_room = LaundryRoom.find(params[:laundry_room_id])
     time_slot = Time.zone.parse(params[:time])

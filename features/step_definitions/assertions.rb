@@ -9,3 +9,7 @@ end
 Then("I logout") do
     logout 
 end
+
+Then("I should see the booking calendar") do
+    expect(page).to have_selector(".calendar")
+end
