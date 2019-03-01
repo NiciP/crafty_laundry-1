@@ -1,4 +1,13 @@
-%h1 LaundryRooms
-=image_tag "craftylogo.png", :class => "logo"
-= link_to "Sign up", new_user_registration_path unless current_page? new_user_registration_path
-= link_to "Login", new_user_session_path 
+.wrapper
+%header
+.title
+  %h1 Crafty Laundry
+
+%section
+.image
+  =image_tag "craftylogo.png", :class => "logo"
+%section
+  .button1
+  = link_to "Sign up", new_user_registration_path unless current_page? new_user_registration_path
+  .button2 
+  = link_to "Login", new_user_session_path  
