@@ -33,3 +33,8 @@ Given("I am logged in as {string}") do |email|
     user = User.find_by(email: email)
     login_as(user, scope: :user)
 end  
+
+Then("I logout") do
+   logout 
+end
+  
