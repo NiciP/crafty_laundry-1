@@ -38,8 +38,4 @@ When("I click on {string} on {string}") do |hours, day|
     date = (Date.today+1).strftime("%d %b").titleize.to_s
     element = "#{date} #{hours}"
     click_on element
-end
-  
-
-# @date.strftime("%d %b").titleize
-  
+end  

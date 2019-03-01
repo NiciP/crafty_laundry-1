@@ -11,9 +11,7 @@ Feature: Visitor can book an available timeslot
       And the following user exists
         | email           | password |
         | gina@rita.com   | 12345678 |
-        | someone@rita.com| 12345678 |
-        
-  
+        | someone@rita.com| 12345678 |   
 
     Scenario: Visitor can make a succesfull booking
       When I am logged in as "gina@rita.com"
@@ -36,6 +34,3 @@ Feature: Visitor can book an available timeslot
       And I visit the "booking page"
       And I click on "08:00" on "Tomorrow"
       Then I should see "The laundry room is fully booked"
-
-
-

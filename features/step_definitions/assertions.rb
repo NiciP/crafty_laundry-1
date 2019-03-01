@@ -8,4 +8,4 @@ end
 
 Then("I logout") do
     logout 
- end
+end
