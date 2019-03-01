@@ -6,6 +6,7 @@
   width: 1000px;
   margin: 0 auto;
 }
+
 .title {
   @apply text-center;
   @apply text-blue-dark;
@@ -20,6 +21,7 @@
   @apply text-center;
   @apply m-0;
   @apply p-0;
+  @apply pt-10;
 }
 
 section {
@@ -27,12 +29,8 @@ section {
   @apply text-center;
   @apply p-6;
   @apply mb-10;
+}
   
-}
-
-.image {
-  @apply pt-10;
-}
 .button1 {
   @apply float-left;
   @apply text-center;
@@ -54,6 +52,53 @@ a {
   @apply float-left;
   @apply text-center;
   
+}
+
+footer {
+  @apply pt-10;
+  @apply bg-grey-light;
+  @apply py-6;
+  @apply text-center;
+}
+
+.sign_up_form {
+  @apply text-center;
+  @apply pt-12;
+}
+
+.sign_up_title {
+  @apply text-center;
+  @apply text-blue-dark;
+  @apply font-serif;
+  @apply text-4xl;
+  @apply pt-6;
+  @apply bg-grey-light;
+  @apply p-6;
+}
+
+.email {
+  @apply text-grey-darker;
+  @apply text-sm;
+  @apply font-bold;
+  @apply mb-2;
+}
+
+input {
+  @apply inline-block;
+  @apply leading-normal;
+  @apply border;
+  @apply m-4;
+  @apply border-blue;
+}
+
+.actions {
+  @apply text-center;
+}
+
+.center_button {
+  @apply text-center;
+  @apply mt-4;
+  @apply m-10;
 }
 
 footer {
@@ -97,9 +142,7 @@ input {
   @apply text-center;
 }
 
-.center_button {
+.shared_login_button {
   @apply text-center;
   @apply mt-4;
-  @apply m-10;
 }
-
