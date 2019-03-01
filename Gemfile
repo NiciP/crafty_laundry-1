@@ -15,7 +15,7 @@ gem 'webpacker', '~> 3.5'
 gem 'tailwindcss', '~> 0.2.0'
 gem 'haml-rails'
 gem 'acts_as_bookable', git: "https://github.com/CraftAcademy/acts_as_bookable"
-
+gem 'devise'
 
 group :development, :test do
   gem 'cucumber-rails', require: false

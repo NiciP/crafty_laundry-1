@@ -1,9 +1,6 @@
-%h1 LaundryRooms
-%button 
-    Login
-%button 
-    Sign up
-=image_tag "craftylogo.png", class: "logo"
+=image_tag "craftylogo.png", :class => "logo"
+= link_to "Sign up", new_user_registration_path unless current_page? new_user_registration_path
+= link_to "Login", new_user_session_path 
 
 - @laundry_rooms.each do |laundry_room|
     -laundry_room.schedule.next_occurrences(30).each do |slot|
@@ -11,4 +8,5 @@
 
         //= link_to slot.strftime('%H:%M'), laundry_room_create_booking_path
         
+
 
