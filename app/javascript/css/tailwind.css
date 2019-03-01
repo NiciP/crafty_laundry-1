@@ -51,7 +51,6 @@ a {
 .button2 {
   @apply float-left;
   @apply text-center;
-  
 }
 
 footer {
@@ -102,10 +101,10 @@ input {
 }
 
 footer {
-    @apply pt-10;
-    @apply bg-grey-light;
-    @apply py-6;
-    @apply text-center;
+  @apply pt-10;
+  @apply bg-grey-light;
+  @apply py-6;
+  @apply text-center;
 }
 
 .sign_up_form {
