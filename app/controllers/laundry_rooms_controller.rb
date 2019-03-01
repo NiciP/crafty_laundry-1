@@ -4,6 +4,10 @@ class LaundryRoomsController < ApplicationController
   def index
     @laundry_rooms = LaundryRoom.all
   end 
+    
+  def show
+    @laundry_room = LaundryRoom.first
+  end
 
   def create_booking
     laundry_room = LaundryRoom.find(params[:laundry_room_id])
