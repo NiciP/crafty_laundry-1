@@ -3,11 +3,16 @@
 .title
   %h1 Crafty Laundry
 
-%section
+%sectionb
 .image
-  =image_tag "craftylogo.png", :class => "logo"
+  =image_tag "crafty_laundry.png", :class => "logo"
 %section
   .button1
   = link_to "Sign up", new_user_registration_path unless current_page? new_user_registration_path
   .button2 
   = link_to "Login", new_user_session_path  
+%footer
+  %h2 Contact Us
+  %p Tel. 555 6677
+  %p email: www.craftylaundry.se
+   
