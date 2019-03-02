@@ -15,3 +15,7 @@
   %h2 Contact Us
   %p Tel. 555 6677
   %p email: www.craftylaundry.se
+
+- @laundry_rooms.each do |laundry_room|
+  -laundry_room.schedule.next_occurrences(30).each do |slot|
+    = link_to slot.beginning_of_hour.to_formatted_s(:short), laundry_room_create_booking_path(laundry_room,time: slot.beginning_of_hour.to_formatted_s(:short))
