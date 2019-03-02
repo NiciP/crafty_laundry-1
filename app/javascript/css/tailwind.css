@@ -101,9 +101,10 @@ input {
 }
 
 footer {
-  @apply pt-10;
+  @apply pt-4;
+  @apply my-12;
   @apply bg-grey-light;
-  @apply py-6;
+  @apply py-8;
   @apply text-center;
 }
 
