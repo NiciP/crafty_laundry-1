@@ -2,8 +2,6 @@ Given("I visit the {string}") do |page|
     case page
     when "landing page"
         visit root_path
-    when "booking page"
-        visit laundry_rooms_path
     else
         return false
     end
@@ -34,8 +32,11 @@ Given("I am logged in as {string}") do |email|
     login_as(user, scope: :user)
 end  
 
-When("I click on {string} on {string}") do |hours, day|
-    date = (Date.today+1).strftime("%d %b").titleize.to_s
-    element = "#{date} #{hours}"
-    click_on element
+When("I click on {string} on Tomorrow") do |hours|
+    date = (Date.today+1).strftime("%Y%m%d")
+    time = "#{hours[0..1]}#{hours[3..4]}00"
+    element = "##{date}#{time}"
+    within(element) do
+        click_on hours
+    end
 end  

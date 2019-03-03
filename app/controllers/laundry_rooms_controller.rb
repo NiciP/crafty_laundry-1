@@ -17,9 +17,9 @@ class LaundryRoomsController < ApplicationController
     begin
       current_user.book! laundry_room, time:time_slot_to_book, amount:1
       flash[:notice] = "You have succesfully booked a time. #{time_slot.to_formatted_s(:short)}."
-      redirect_to root_path
+      redirect_to laundry_room
     rescue ActsAsBookable::AvailabilityError => error
-      redirect_to root_path, notice: error.message.underscore.humanize
+      redirect_to laundry_room, notice: error.message.underscore.humanize
     end
   end
 end
