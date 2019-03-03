@@ -1,6 +1,7 @@
 .calendar
-    = week_calendar number_of_weeks: 2 do |date| 
-        = date 
-
--@laundry_room.schedule.next_occurrences(30).each do |slot|
-    = link_to slot.beginning_of_hour.to_formatted_s(:short), laundry_room_create_booking_path(@laundry_room,time: slot.beginning_of_hour.to_formatted_s(:short))
+  = week_calendar number_of_weeks: 2, events: @laundry_room.schedule.next_occurrences(60) do |date,times|
+    = date
+    -times.each do |time|
+      = link_to time.beginning_of_hour.to_formatted_s(:time), laundry_room_create_booking_path(@laundry_room,time: time.beginning_of_hour.to_formatted_s(:short))
+      
+          

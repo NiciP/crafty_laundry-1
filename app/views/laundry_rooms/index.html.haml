@@ -1,8 +1,5 @@
 =image_tag "craftylogo.png", :class => "logo"
 = link_to "Sign up", new_user_registration_path unless current_page? new_user_registration_path
 = link_to "Login", new_user_session_path 
--if @current_user 
-    = link_to "Calendar", laundry_room_path(LaundryRoom.first)
-    else
-    return false 
+= link_to "Calendar", laundry_room_path(LaundryRoom.first) 
 
