@@ -1,3 +1,62 @@
 @tailwind preflight;
 @tailwind components;
 @tailwind utilities;
+
+.calendar-heading {
+  @apply text-center;
+  @apply mt-10;
+  @apply font-bold;
+
+}
+
+.calendar-title {
+  @apply text-center;
+  @apply mt-10;
+  @apply font-bold;
+  @apply text-2xl;
+  @apply p-10;
+   
+}
+
+.start-date {
+  @apply mt-2;
+  @apply pl-10;
+  @apply text-center;
+}
+
+.current-month {
+  @apply text-center;
+  @apply mt-10;
+  @apply font-bold;
+  @apply border-8;
+}
+
+  
+  .day {
+    @apply text-center;
+  }
+    
+
+    .wday-0 {}
+    .wday-1 {}
+    .wday-2 {}
+    .wday-3 {}
+    .wday-4 {}
+    .wday-5 {}
+    .wday-6 {}
+  
+    .today {
+      
+    }
+    .past {}
+    .future {}
+  
+    .prev-month {}
+    .next-month { }
+    
+  
+    .has-events {
+      @apply mt-10;
+      
+    }
+  
