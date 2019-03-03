@@ -1,5 +1,12 @@
-=image_tag "craftylogo.png", :class => "logo"
-= link_to "Sign up", new_user_registration_path unless current_page? new_user_registration_path
-= link_to "Login", new_user_session_path 
-= link_to "Calendar", laundry_room_path(LaundryRoom.first) 
+%sectionb
+.image
+  =image_tag "crafty_laundry.png", :class => "logo"
+%section
+  .button1
+  = link_to "Sign up", new_user_registration_path unless current_page? new_user_registration_path
+  .button2 
+  = link_to "Login", new_user_session_path 
+  .button3
+  = link_to "Calendar", laundry_room_path(LaundryRoom.first) 
+
 
