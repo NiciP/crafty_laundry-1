@@ -10,7 +10,16 @@
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     = stylesheet_pack_tag    'application'
     = javascript_pack_tag 'application'
+
+    .wrapper
+    %header
+    .title  
+      %h1 Welcome!
   %body
     %p= notice
     %p= alert
-    = yield
+  = yield
+  %footer
+    %h2 Contact Us
+    %p Tel. 555 6677
+    %p email: www.crafty@clean.se  
