@@ -3,6 +3,8 @@ class LaundryRoomsController < ApplicationController
     
   def index
     @laundry_rooms = LaundryRoom.all
+    response = RestClient.get('https://api.chucknorris.io/jokes/random').body
+    @joke = JSON.parse(response)['value']
   end 
     
   def create_booking

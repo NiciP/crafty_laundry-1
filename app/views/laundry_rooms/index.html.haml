@@ -7,6 +7,9 @@
   .button2 
   = link_to "Login", new_user_session_path  
 
+%sectionc
+  %h3 Your Chuck Norris fix for the day!!!
+  %p= @joke
 - @laundry_rooms.each do |laundry_room|
   -laundry_room.schedule.next_occurrences(30).each do |slot|
     = link_to slot.beginning_of_hour.to_formatted_s(:short), laundry_room_create_booking_path(laundry_room,time: slot.beginning_of_hour.to_formatted_s(:short))

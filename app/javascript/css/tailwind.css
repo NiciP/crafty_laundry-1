@@ -31,6 +31,13 @@ section {
   @apply mb-10;
 }
   
+sectionc {
+  @apply overflow-x-hidden;
+  @apply text-center;
+  @apply p-6;
+  @apply mb-10;
+}
+
 .button1 {
   @apply float-left;
   @apply text-center;
