@@ -43,7 +43,7 @@ sectionc {
   @apply text-center;
 } 
 
-a {
+#index a {
   @apply pr-10;
   @apply bg-blue;
   @apply font-bold;
@@ -56,6 +56,11 @@ a {
 }
 
 .button2 {
+  @apply float-left;
+  @apply text-center;
+}
+
+.button3 {
   @apply float-left;
   @apply text-center;
 }
